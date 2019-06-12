@@ -1,0 +1,5 @@
+Tarea!!!!!
+
+1. Configurar y levantar un servidor en el puerto 5000
+2. Hacer una consulta y que responda con una letra de una canción
+3. Hacer una consulta y que responda el valor de Pi(3.1416)
