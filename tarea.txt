@@ -1,5 +1,12 @@
 Tarea!!!!!
 
-1. Configurar y levantar un servidor en el puerto 5000
-2. Hacer una consulta y que responda con una letra de una canción
-3. Hacer una consulta y que responda el valor de Pi(3.1416)
+1. Crear una ruta(url) de tipo Post el cual por body le pasemos: 
+    a) nombre canción
+    b) nombre artista
+
+2. A la ruta que hicimos en el punto 1 le pasamos por params:
+    a) duracion de cancion
+    b) genero
+
+3. Crear una ruta de tipo GET donde le pases por params:
+    a) usuario

@@ -8,10 +8,36 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json()); 
 
 // Rutas del servidor
-app.get('/hola', (req, res)=>{
+app.get('/hola/:user', (req, res)=>{
+
+    // Leer parametros por params
+    const params = req.params
+
+    const user = params.user
+
     res.json({
         ok: true,
-        mensaje: 'Hola desde el servidor!!!!'
+        mensaje: `Hola ${user}`
+    })
+});
+
+app.post('/hola/post/:user', (req, res) => {
+
+    // Leer parametros por body
+    const body = req.body
+    // Leer parametros por params
+    const params = req.params
+
+    const user = params.user
+    const password = body.password
+
+    console.log(`Este es el usuario que pasaron al servidor: ${user}`);
+    console.log(`Esta es la contraseña que pasaron al servidor: ${password}`);
+
+    res.json({
+        ok: true,
+        user,
+        password
     })
 })
 
